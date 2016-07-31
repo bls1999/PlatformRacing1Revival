@@ -1,0 +1,11 @@
+// List of commands:
+//~~~~~~~~~~~~~~~~~~~
+// ip	 - Specifies the IP the server is to be run on. If left unspecified,
+//		   it will run on all available addresses.
+// port	 - Specifies the port the server is to be run on. If left unspecified,
+//		   it will run on port 7249.
+// motd  - The message of the day that will be shown to clients when they connect.
+
+ip = // Enter an IP to host on here!
+port = 9104
+motd = <b>Hey, welcome to my server! You can change the current MotD in <i>config.txt</i>.</b>
