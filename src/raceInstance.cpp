@@ -1,4 +1,4 @@
-#include "raceInstance.h"
+#include "raceInstance.hpp"
 
 raceInstance::raceInstance(){
 	raceEmpty = true;

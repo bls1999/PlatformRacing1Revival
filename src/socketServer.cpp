@@ -1,9 +1,11 @@
-#include "socketServer.h"
+#include "socketServer.hpp"
 #include <stdio.h>
 #include <fstream>
 #include <sstream>
 
-int inet_pton(int af, const char *src, char *dst);
+extern "C" {
+	int inet_pton(int af, const char *src, char *dst);
+}
 bool playerInfoIsValid(const char buffer[2048]);
 
 socketServer::socketServer(){

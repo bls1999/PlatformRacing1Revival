@@ -1,4 +1,4 @@
-#include "lobbySlotHandler.h"
+#include "lobbySlotHandler.hpp"
 
 lobbySlotHandler::lobbySlotHandler(){
 	playerIDs[0]	= 0; playerIDs[1]	= 0; playerIDs[2]	= 0; playerIDs[3]	= 0;

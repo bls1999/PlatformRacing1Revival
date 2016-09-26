@@ -4,8 +4,11 @@
 //		   it will run on all available addresses.
 // port	 - Specifies the port the server is to be run on. If left unspecified,
 //		   it will run on port 7249.
+// name  - The name of the server that will show up in server browsers.
 // motd  - The message of the day that will be shown to clients when they connect.
+// xlist - Specify whether the xlist.txt file is a blacklist (0, default) or a whitelist (1).
 
 ip = // Enter an IP to host on here!
 port = 9104
 motd = <b>Hey, welcome to my server! You can change the current MotD in <i>config.txt</i>.</b>
+xlist = 0

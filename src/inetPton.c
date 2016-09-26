@@ -214,7 +214,8 @@ int inet_pton6(const char *src, char *dst)
 		if (tp == endp)
 			return 0;
 
-		for (int i = 1; i <= n; i++)
+		int i;
+		for (i = 1; i <= n; i++)
 		{
 			endp[-i] = colonp[n - i];
 			colonp[n - i] = 0;

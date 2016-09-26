@@ -1,7 +1,7 @@
 #ifndef LOBBYSLOTHANDLER_H
 #define LOBBYSLOTHANDLER_H
 
-#include "raceInstance.h"
+#include "raceInstance.hpp"
 
 struct lobbySlotHandler{
 

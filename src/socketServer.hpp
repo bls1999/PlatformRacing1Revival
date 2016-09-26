@@ -18,8 +18,8 @@
 #define DEFAULT_PORT 7249
 
 #include <vector>
-#include "player.h"
-#include "lobbySlotHandler.h"
+#include "player.hpp"
+#include "lobbySlotHandler.hpp"
 
 struct socketServer{
 
