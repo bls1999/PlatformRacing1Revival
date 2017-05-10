@@ -600,6 +600,12 @@ void socketServer::handleBuffer(unsigned int senderNum){
 			printf("Unable to interpret data sent by socket #%i: %s\n", connectedSockets.at(senderNum), lastBuffer);
 		}
 
+	}else if(strncmp(lastBuffer, "<policy-file-request/>\0", 23) == 0){  // Check if the client is requesting a policy file
+
+		if(send(connectedSockets.at(senderNum), "<?xml version=\"1.0\"?><cross-domain-policy><allow-access-from domain=\"*\" to-ports=\"*\"/></cross-domain-policy>\0", 109, 0) < 0){
+			reportError("send()", WSAGetLastError());
+		}
+
 	}else{
 		printf("Socket #%i is trying to make requests before sending player data, closing connection.\n", connectedSockets.at(senderNum));
 		disconnectSocket(senderNum);
