@@ -1,1 +1,1 @@
-g++ main.cpp inetPton.c socketServer.cpp player.cpp lobbySlotHandler.cpp raceHandler.cpp raceInstance.cpp -o PR1Server.exe -lWs2_32
+g++ main.cpp inetPton.c socketServer.cpp player.cpp lobbySlotHandler.cpp raceInstance.cpp -o PR1Server.exe -lWs2_32
